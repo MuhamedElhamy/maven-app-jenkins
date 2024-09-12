@@ -25,7 +25,7 @@ pipeline {
         stage("build image") {
             steps {
                 script {
-                    buildImage()
+                    buildImage 'mhmdelhamy/java-maven-app:4.0'
                 }
             }
         }
