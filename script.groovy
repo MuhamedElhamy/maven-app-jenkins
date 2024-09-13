@@ -23,7 +23,7 @@ def versionUpdate() {
         sh 'git config --global user.email "jenkins@example.com"'
         sh 'git config --global user.name "jenkins"'
     
-        sh "git remote set-url origin https://${USER}:${PASS}@github.com/MuhamedElhamy/maven-app-jenkins.git"
+        sh "git remote set-url origin  https://MuhamedElhamy:SinCosTan306045@github.com/MuhamedElhamy/maven-app-jenkins.git"
         sh 'git add .'
         sh 'git commit -m "ci: version bump"'
         sh 'git push origin HEAD:master'
