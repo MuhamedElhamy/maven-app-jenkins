@@ -50,5 +50,13 @@ pipeline {
                 }
             }
         }
+        stage("version commit") {
+            steps {
+                script {
+                    echo "versioning commit..."
+                    gv.versionUpdate()
+                }
+            }
+        }
     }   
 }
